@@ -3,6 +3,7 @@
         <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Author" max_length="32" name="author" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
         <element label="Decision" mandatory="true" max_length="4000" name="decision" type="string"/>
         <element label="Justification" mandatory="true" max_length="4000" name="justification" type="string"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Shared with" max_length="1024" name="shared_with" reference="sys_user" type="glide_list"/>
         <element label="Work Notes" max_length="4000" name="work_notes" type="journal_input"/>
         <index name="index">
             <element name="author"/>
